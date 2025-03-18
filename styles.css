@@ -1,80 +1,162 @@
-/* General Body Styles */
-body {
-    font-family: 'Georgia', serif;
-    background-color: #F4F4F4;
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body and Font Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header Styles */
-header {
-    background-color: #3E3B3A; /* Elegant dark color */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header .logo h1 {
-    font-size: 36px;
-    letter-spacing: 2px;
-    margin: 0;
-}
-
-header .logo p {
-    font-size: 18px;
-    margin: 5px 0 0;
-}
-
-/* Main Section Styles */
-main {
-    padding: 40px;
+.container {
+    width: 80%;
+    margin: 0 auto;
     max-width: 1200px;
-    margin: auto;
 }
 
-/* Intro Section */
-.intro {
-    text-align: center;
-    margin-bottom: 40px;
+/* Navbar Styles */
+header {
+    background-color: #2c3e50;
+    padding: 1rem 0;
 }
 
-.intro h2 {
-    font-size: 28px;
-    color: #2A2A2A;
-    margin-bottom: 10px;
-}
-
-.intro p {
-    font-size: 20px;
-    color: #555;
-}
-
-/* About Section */
-.about {
-    background-color: #EAE8E3;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.about h3 {
+header .logo {
+    color: #fff;
     font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header .nav-links {
+    list-style-type: none;
+    float: right;
+}
+
+header .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.service-item {
+    text-align: center;
+    margin: 30px;
+    display: inline-block;
+    width: 30%;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #2A2A2A;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #ecf0f1;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .about p {
-    font-size: 18px;
-    color: #4F4F4F;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #3E3B3A;
-    color: white;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
